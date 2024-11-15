@@ -11,12 +11,13 @@
 const mysql = require('mysql2');
 const connection = mysql.createConnection({
   host: 'localhost',
-  user: 'yourusername',
-  password: 'yourpassword',
-  database: 'yourdatabase',
+  user: 'root',
+  password: '0000',
+  database: 'Ecom',
   insecureAuth: true
 });
-module.exports = pool.promise();
+module.exports = connection;
+
 // const mysql = require('mysql2/promise');
 
 // const connection = await mysql.createConnection({
